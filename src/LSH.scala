@@ -43,9 +43,11 @@ object LSH {
 				}
 			}
 	// print all candidate pairs
+	println("Candidate pairs")
 	candidate_pairs.foreach(println)
 	// threshold approximation
-	println(math.pow(1.0/b , 1.0/r ))
+	
+	println("Threshold t " + math.pow(1.0/b , 1.0/r ))
 	}
 
 }

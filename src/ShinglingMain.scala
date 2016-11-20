@@ -25,7 +25,7 @@ object ShinglingMain {
 			var list_sim = new ListBuffer[Double]()
 
 			for ((file , i )<- files.zipWithIndex){
-			  println("File index: " + i + " " + "File name: " +  file );
+			  println("File index: " + i + " " + "File name: " +  file.getName);
 				var file_contents= Source.fromFile(file, "ISO-8859-1"); // open document 
 				//get the list of shingles of a given document and hash the shingles to a signed integer
 				var shingles = file_contents.toList.sliding(shingleLength)  
